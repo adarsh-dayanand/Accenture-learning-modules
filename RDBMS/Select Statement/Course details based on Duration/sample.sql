@@ -1,0 +1,1 @@
+select coursename,fees from course where duration between 2 AND 4 order by coursename;

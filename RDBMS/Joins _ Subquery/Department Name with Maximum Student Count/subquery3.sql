@@ -1,0 +1,2 @@
+select department_name from department d inner join student s on s.department_id=d.department_id having count(*) in (select max(count(student_id)) from student s join department d on d.department_id=s.department_id group by d.department_id)
+group by d.department_id,department_name;

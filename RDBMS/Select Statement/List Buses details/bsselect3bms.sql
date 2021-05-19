@@ -1,0 +1,1 @@
+select BUS_NO, BUS_NAME from BUSES order by BUS_NAME desc;

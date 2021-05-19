@@ -1,0 +1,1 @@
+update mobile_master set price=20000 where manufacturer='Nokia'and price>20000;

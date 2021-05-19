@@ -1,0 +1,1 @@
+select distinct studid from registration where courseid IN(1001,1005) order by studid; 

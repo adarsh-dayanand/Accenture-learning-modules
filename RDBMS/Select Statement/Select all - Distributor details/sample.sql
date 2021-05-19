@@ -1,0 +1,1 @@
+select * from distributor order by distributor_id asc;

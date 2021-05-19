@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color:#FFAACC;
+            }
+            h1{
+                color:#770080;
+                font-family:cursive;
+                text-align:center;
+            }
+            #result{
+                font-weight:bold;
+                color:#770080;
+            }
+        </style>
+        <script>
+            function validate(){
+                document.getElementById("result").innerHTML="Thank you "+document.getElementById("name").value+". Your Loan Amount is "+document.getElementById("amt").value
+  
+            }
+        </script>
+    </head>
+    <body>
+        <h1>DAC BANK - AVAIL LOAN</h1>
+        <form>
+            <table>
+                <tr>
+                    <td>Customer Name</td>
+                    <td>
+                        <input type="text" name="customerName" id="name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>
+                        <textarea name="customerAddress" rows="5" cols="20"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="female" value="female">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email ID</td>
+                    <td>
+                        <input type="email" name="customerEmail">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mobile Number</td>
+                    <td>
+                        <input type="" name="customerMobileNumber" pattern="[789][0-9]{9}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td>
+                        <input type="date" name="dob">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Loan Type</td>
+                    <td>
+                        <input list="loan" name="loanType" auto-complete>
+                        <datalist id="loan">
+                            <option value="Vehicle">Vehicle</option>
+                            <option value="Home">Home</option>
+                            <option value="Education">Education</option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Loan Amount</td>
+                    <td>
+                        <input type="text" name="loanAmount" id="amt" placeholder="Enter the Amount" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tenure</td>
+                    <td>
+                        <input type="number" min="1" max="5" name="loanTenure">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" name="submit" value="Avail Loan" onclick="validate()">
+                    </td>
+                    <td>
+                        <input type="reset" name="reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <div id="result"></div>
+    </body>
+</html>

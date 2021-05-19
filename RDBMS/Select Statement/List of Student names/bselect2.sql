@@ -1,0 +1,1 @@
+select student_name from student WHERE student_id!=4 AND student_id!=7 order by student_name;

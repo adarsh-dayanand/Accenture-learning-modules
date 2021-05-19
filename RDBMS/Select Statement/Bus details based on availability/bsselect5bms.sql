@@ -1,0 +1,1 @@
+select bus_no, bus_name from buses where avail_seats between 5 and 10 order by bus_name;

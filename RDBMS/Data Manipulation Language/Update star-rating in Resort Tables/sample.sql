@@ -1,0 +1,1 @@
+ update resort set starRating=4.5;

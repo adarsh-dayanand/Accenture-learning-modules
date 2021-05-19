@@ -1,0 +1,6 @@
+insert into guest(guestid,name,address,country,email,phone)values('1234','RAJ GUPTA',
+'116 LAKE ROAD OOTACAMUND','INDIA','RAJ@HOTMAIL.COM','919090909090' );
+INSERT INTO GUEST(guestid,name,address,country,email,phone)VALUES('1235','JACK MARTIN',
+'NO:5ST ANTONYS CHRUCH CHENNAI','INDIA','JACK.1909@GMAIL.COM','917867867834');
+INSERT INTO GUEST(guestid,name,address,country,email,phone)VALUES('1236','MARY GREY',
+'14/2 EAST GHAT ROAD KODAIKANAL','INDIA','MARK.KOM@GYAHOO.COM','911234565432');

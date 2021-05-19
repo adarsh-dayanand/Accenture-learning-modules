@@ -1,0 +1,1 @@
+select student_name from student where length(student_name)=6 order by student_name;

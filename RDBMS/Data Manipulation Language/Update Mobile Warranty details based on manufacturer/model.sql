@@ -1,0 +1,1 @@
+update mobile_master set warranty_in_years=4 where manufacturer='Samsung';

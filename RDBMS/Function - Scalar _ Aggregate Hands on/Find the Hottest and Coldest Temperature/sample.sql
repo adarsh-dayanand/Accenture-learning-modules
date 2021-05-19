@@ -1,0 +1,1 @@
+SELECT max(summertemp) as "HOT SUMMER", min(wintertemp) as "CHILL WINTER" FROM Town;

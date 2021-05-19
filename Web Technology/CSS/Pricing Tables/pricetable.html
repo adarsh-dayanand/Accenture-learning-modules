@@ -1,0 +1,85 @@
+<!-- do not make any changes in the template -->
+<!-- WRITE YOUR CODE IN THE AREA INDICATED AS FILL YOUR CODE HERE -->
+<html>
+<head>
+<style>
+*{ box-sizing: border-box;}
+
+.columns{
+           float:left;
+            width: 33.3%;
+            padding: 8px;
+}
+.price { list-style-type: none;
+        border:1px solid #eee;
+        margin:0;
+        padding:0;
+        -webkit-transition:0.3s;
+        transition: 0.3s;
+}
+.price:hover{ box-shadow: 0 8px 12px 0 
+rgba(0,0,0,0.2)}
+
+.price.header{ background-color: #111;
+color:white;
+font-size: 25px;
+}
+
+.price li{ border-bottom: 1px solid #eee;
+           padding:20px;
+           text-align: center;}
+           
+.price.color{ background-color: #eee;
+font-size: 20px;}
+
+.button{ background-color: #4CAF50;
+            border:none;
+            color:white;
+            padding:10px 25px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+}
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center">Pricing Tables</h2>
+
+<div class="columns" id="1">
+  <ul class="price">
+    <li class="header">Basic</li>
+    <li class="colour">$ 9.99 / year</li>
+    <li>10GB Storage</li>
+    <li>10 Emails</li>
+    <li>10 Domains</li>
+    <li>1GB Bandwidth</li>
+    <li class="colour"><a href="#" class="button">Sign Up</a></li>
+  </ul>
+</div>
+
+<div class="columns" id="2">
+  <ul class="price">
+    <li class="header" style="background-color:#4CAF50">Pro</li>
+    <li class="colour">$ 24.99 / year</li>
+    <li>25GB Storage</li>
+    <li>25 Emails</li>
+    <li>25 Domains</li>
+    <li>2GB Bandwidth</li>
+    <li class="colour"><a href="#" class="button">Sign Up</a></li>
+  </ul>
+</div>
+
+<div class="columns" id="3">
+  <ul class="price">
+    <li class="header">Premium</li>
+    <li class="colour">$ 49.99 / year</li>
+    <li>50GB Storage</li>
+    <li>50 Emails</li>
+    <li>50 Domains</li>
+    <li>5GB Bandwidth</li>
+    <li class="colour"><a href="#" class="button">Sign Up</a></li>
+  </ul>
+</div>
+</body>
+</html>

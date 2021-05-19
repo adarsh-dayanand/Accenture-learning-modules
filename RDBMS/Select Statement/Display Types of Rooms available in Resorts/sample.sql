@@ -1,0 +1,1 @@
+select resortid, bedroomcount, cabintype  from cabin where resortid=1001 or resortid=1002 order by resortid, bedroomcount, cabintype;

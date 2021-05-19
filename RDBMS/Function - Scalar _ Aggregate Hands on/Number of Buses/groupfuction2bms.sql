@@ -1,0 +1,1 @@
+select type as bus_type, count(avail_seats) as bus_count from buses group by type order by bus_count desc;

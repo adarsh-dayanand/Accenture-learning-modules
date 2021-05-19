@@ -1,0 +1,1 @@
+select lower(department_name) as dept_name from department order by department_name;

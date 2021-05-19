@@ -1,0 +1,39 @@
+<!-- DO NOT CHANGE THIS FILE.  WRITE THE CODE IN THE SPECIFIED PART ALONE -->
+
+<!doctype html>
+<html>
+    <style>
+        body{
+            background-color:#00FFFF;
+        }
+        h1{
+            color:#DD77FF;
+            text-align:center;
+        }
+    </style>
+    <body bgcolor="00FFFF">
+        <center>
+            <h1>ZEN BANK - LOGIN</h1>
+            <form>
+                <table>
+                    <tr>
+                        <td>User name</td>
+                        <td><input type="text" name="userName" placeholder="Enter your user name" required></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" name="password" placeholder="Enter the password" min="8"
+                        max="15" pattern="[A-Za-z0-9_]{8,15}" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="checkbox" name="rememberMe"> Remember me</td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Sign in" name="submit"></td>
+                        <td><input type="reset" name="reset" value="Clear"></td>
+                    </tr>
+                </table>
+            </form>
+        </center>
+    </body>
+</html>

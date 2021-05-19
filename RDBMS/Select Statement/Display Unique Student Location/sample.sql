@@ -1,0 +1,1 @@
+select DISTINCT city from student order by city; 

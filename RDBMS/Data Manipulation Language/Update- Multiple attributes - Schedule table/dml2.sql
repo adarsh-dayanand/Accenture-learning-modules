@@ -1,0 +1,1 @@
+update schedule set source='Chennai',destination='Coimbatore' where schedule_id ='S4';

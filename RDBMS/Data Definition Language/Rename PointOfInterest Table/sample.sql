@@ -1,0 +1,1 @@
+alter table PointOfInterest rename to TOURISTSPOTS;

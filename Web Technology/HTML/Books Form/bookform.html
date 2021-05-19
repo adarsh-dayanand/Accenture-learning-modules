@@ -1,0 +1,52 @@
+<html>
+    <body>
+        <form id="orderform" autocomplete="on">
+            <fieldset>
+                <legend>
+                    Customer Info
+                </legend>
+                <p>
+                    <label>
+                        Name:
+                        <input name="cusname" type="text"
+                        placeholder="Enter your name" autofocus required size="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Telephone:
+                        <input id="tel" name="telephone"
+                        type="tel" required size="50" placeholder="Pattern: 234-567-8910" pattern="(([0-9]{3})(-[0-9]{3})(-[0-9]{4}))">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Email address:
+                        <input name="mail" type="email" placeholder="Enter your email address" required size="50" multiple>
+                    </label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Books
+                </legend>
+                <p>
+                    <label>
+                        <input type="text" name="book" list="books" size="50">
+                        <datalist id="books">
+                            <option value="HTML5 - Bruce Lawson and Remy Sharp">
+                            <option value="HTML5 : Up and Running - Mark Pilgrim">
+                            <option value="Head First HTML5 programming - Eric Freeman">
+                            <option value="Mastering HTML,CSS and JavaScript - Laura Lemay">
+                            </option>
+                        </datalist>
+                    </label>
+                    <label>
+                        Quantity (Maximum 5): <input name="quantity" type="number" min="1" max="5">
+                    </label>
+                </p>
+            </fieldset>
+            <input type="submit" value="Submit" name="submit">
+        </form>
+    </body>
+</html>

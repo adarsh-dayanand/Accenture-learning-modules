@@ -1,0 +1,1 @@
+select pointid, describe from pointofinterest where closetime>='8PM' order by pointid;

@@ -1,0 +1,1 @@
+chmod u+rw,g+rw,o+rw emp.txt

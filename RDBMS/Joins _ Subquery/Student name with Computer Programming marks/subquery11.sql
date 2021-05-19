@@ -1,0 +1,2 @@
+select student_name,mark.value as CP_MARKS from student join mark on student.student_id=mark.student_id
+join subject on subject.subject_id=mark.subject_id where subject.subject_name='Computer Programming' order by mark.value asc,student_name desc;

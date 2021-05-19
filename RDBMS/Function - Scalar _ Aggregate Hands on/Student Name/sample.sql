@@ -1,0 +1,1 @@
+select FIRSTNAME || ' ' ||LASTNAME as STUDENTNAME from student order by STUDENTNAME;

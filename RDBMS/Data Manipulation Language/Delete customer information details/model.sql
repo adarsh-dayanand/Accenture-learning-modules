@@ -1,0 +1,1 @@
+delete from customer_info where customer_name='Manish';

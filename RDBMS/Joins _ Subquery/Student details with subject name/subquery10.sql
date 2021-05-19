@@ -1,0 +1,2 @@
+select subject_name,student_name from mark join student using(student_id) join subject using(subject_id) where (subject_id,value) in 
+(select subject_id,max(value) from mark group by subject_id) order by subject_name,student_name;

@@ -1,0 +1,1 @@
+select concat(staff_id,substr(staff_name,1,3)) as official_mail from staff order by staff_id;

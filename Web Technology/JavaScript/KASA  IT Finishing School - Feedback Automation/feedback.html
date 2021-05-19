@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color:#FFAACC;
+            }
+            h1{
+                color:#770080;
+                font-family:Courier New;
+                text-align:center;
+                font-style:italic;
+            }
+            #result{
+                font-weight:bold;
+                color:#770080;
+            }
+        </style>
+        <script>
+            function validate(){
+                var r=document.getElementById("cat").value;
+                if(r=="Excellent"){
+                    rate=5;
+                }
+                else if(r=="Very Good"){
+                    rate=4;
+                }
+                else if(r=="Good"){
+                    rate=3;
+                }
+                else if(r=="Average")
+                {
+                    rate=2;
+                }
+                else if(r=="Below Average"){
+                    rate=1;
+                }
+                
+                document.getElementById("result").innerHTML="Feedback rating of "+document.getElementById("tname").value+" is "+rate+" / 5. Given by participant - "+document.getElementById("name").value;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>College Training Feedback Form</h1>
+        <form>
+            <table>
+                <tr>
+                    <td>Participant Name</td>
+                    <td><input type="text" name="participantName" id="name" placeholder="Enter your name" pattern="[a-zA-Z\s]+" required></td>
+                </tr>
+                <tr>
+                    <td>College Name</td>
+                    <td><input type="text" name="collegeName" required></td>
+                </tr>
+                <tr>
+                    <td>Participant Address</td>
+                    <td>
+                        <textarea name="participantAddress" rows="5" cols="20" required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gender" value="male" required>Male
+                        <input type="radio" name="gender" value="female" required>Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email ID</td>
+                    <td><input type="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td>Mobile Number</td>
+                    <td><input type="text" name="mobileNumber" pattern="[789][0-9]{9}" required></td>
+                </tr>
+                <tr>
+                    <td>Trainer's Name</td>
+                    <td><input type="text" name="trainerName" id="tname"></td>
+                </tr>
+                <tr>
+                    <td>Course Name</td>
+                    <td><input type="text" name="courseName"></td>
+                </tr>
+                <tr>
+                    <td>Course Completion date</td>
+                    <td><input type="date" name="dateofcompletion" required></td>
+                </tr>
+                <tr>
+                    <td>Trainer's Feedback</td>
+                    <td><input list="feedback" name="trainerFeedback" id="cat">
+                    <datalist id="feedback">
+                        <option value="Excellent">Excellent</option>
+                        <option value="Very Good">Very Good</option>
+                        <option value="Good">Good</option>
+                        <option value="Average">Average</option>
+                        <option value="Below Average">Below Average</option>
+                    </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="submit" value="Submit Feedback" onclick="validate()"></td>
+                    <td><input type="reset" name="reset" value="Clear"></td>
+                </tr>
+            </table>
+        </form>
+        <div id="result"></div>
+    </body>
+</html>

@@ -1,0 +1,1 @@
+select student_name from student order by student_name;

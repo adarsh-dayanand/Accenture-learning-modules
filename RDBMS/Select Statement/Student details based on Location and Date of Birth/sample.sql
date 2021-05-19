@@ -1,0 +1,1 @@
+select studid,firstname from student where dob ='8-Oct-1997' AND (city = 'Coimbatore' OR city = 'Chennai') order by studid;

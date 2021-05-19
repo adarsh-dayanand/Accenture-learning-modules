@@ -1,0 +1,1 @@
+date +'DATE: %d/%m/%y' # fill in with correct format to display the current date Example "Date: 27/11/17"
