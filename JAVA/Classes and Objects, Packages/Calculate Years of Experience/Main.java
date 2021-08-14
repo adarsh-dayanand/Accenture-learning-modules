@@ -15,7 +15,7 @@ long diff = d2.getTime() - d1.getTime();
 long l1 = (24*60*60*1000); 
 long l = l1*365; 
 long year=diff/l; 
-System.out.println(year+" years"); 
+System.out.println(Math.abs(year)+" years"); 
 } 
 catch(ParseException e) {} 
 }
