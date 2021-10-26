@@ -1,0 +1,1 @@
+grep -F '#' teknoscript.txt
