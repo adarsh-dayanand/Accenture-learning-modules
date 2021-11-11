@@ -1,0 +1,5 @@
+select customer_info.customer_ID,customer_info.customer_name,customer_info.mobile, count(*) as TOTAL_MOBILES_PURCHASED
+from sales_info 
+inner join customer_info on customer_info.customer_ID = sales_info.customer_ID
+group by customer_info.customer_ID,customer_info.customer_name,customer_info.mobile
+having count(*)>1
