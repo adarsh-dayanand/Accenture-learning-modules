@@ -1,0 +1,1 @@
+select salesId, sales_date,ime_no,price,coalesce(to_char(discount),'Not Available') from sales_info;
